@@ -1,37 +1,9 @@
+/* General */
+
 body
 {
     font-family: 'raleway', sans-serif;
 
-}
-
-header, #hotels, #activites
-{
-    padding-left: 54px;
-}
-
-a
-{
-    text-decoration: none;
-}
-
-a:hover
-{
-    border-top: 2px solid #0065FC;
-    margin-top: -49px;
-}
-
-#headerligne1
-{
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#headerligne1d
-{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
 }
 
 h1
@@ -40,22 +12,69 @@ h1
     font-size: 20px;
 }
 
+/* Header*/
+
+header
+{
+    padding-left: 54px;
+}
+
+/* Header ligne 1 Logo & Liens*/
+
+a
+{
+    height: 60px;
+    padding-top: 48px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+a:hover
+{
+    border-top: 2px solid #0065FC;
+}
+
+#headerligne1
+{
+    height: 50px;
+    margin-top: -8px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#headerligne1d
+{
+    width: 50%;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .element
 {
-    padding-top: 10px;
+    
     width: 30%;
+    height: 100%;
     text-align: center;
+    
 }
+
+/* Header ligne 2 et 3 Titre */
 
 .ligne3
 {
     margin-top: -18px;
 }
 
+/* Header ligne 4 Navigation */
+
 form
 {
     margin-top: 19px;
     display: flex;
+    padding-left: 4px;
 }
 
 .mapmarker
@@ -89,30 +108,12 @@ form
     border-radius: 0 10px 10px 0;
 }
 
-h2
-{
-    font-size: 16px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Header ligne 5 Filtres */
 
 #filtres
 {
     display: flex;
+    padding-left: 11px;
 }
 
 .filtres
@@ -240,53 +241,95 @@ h2
     top: 4px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Header ligne 6 Point-info */
 
 #pointinfo
 {
     display: flex;
+    padding-left: 9px;
 }
 
 .info
 {
-    width: 25px;
-    height: 20px;
+    width: 22px;
+    height: 17px;
     margin-top: 15px;
     padding-top: 5px;
     border-radius: 15px;
     border: 1px gray solid;
 }
 
-.info0
+#info0
 {
-    width: 60%;
-    height: 70%;
-    padding-left: 5px;
+    color: #0065FC;
+    font-size: 12px;
+    position: relative;
+    left: 9px;
+    bottom: 5px;
 }
+
+.info1
+{
+    margin-top: 2px;
+    margin-left: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section 1 Hotels - Populaires */
+
+h2
+{
+    font-size: 16px;
+}
+
+#hotels, #activites
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+img             /* PEUT-ETRE A MODIFIER */
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.etoile-active
+{
+    color: #0065FC;
+}
+
+.etoile-inactive
+{
+    color: #F2F2F2;
+}
+
+/* Section 1 Hotels */
 
 #hotels
 {
@@ -294,15 +337,20 @@ h2
     justify-content: space-between;
 }
 
-.section1
+#sectionA
 {
-    width: 70%;
-    background-color: #F2F2F2;
+
+    display: flex;
+    justify-content: space-around;
 }
 
-.section2
+.sectionA
 {
-    width: 25%;
+    border: 2px solid green;
+    border-radius: 20px;
+    padding-left: 39px;
+    padding-right: 39px;
+    width: 63%;
     background-color: #F2F2F2;
 }
 
@@ -316,32 +364,37 @@ h2
 .six-photos > div
 {
     border: 2px solid red;
+    border-radius: 16px;
     width: 30%;
     margin-bottom: 15px;
     background-color: white;
 }
 
-img             /* A MODIFIER */
+.six-photos img
 {
-    max-width: 96%;
-    padding-left: 2%;
-    padding-top: 2%;
+    border-radius: 15px 15px 0 0;
+    max-width: 97%;
+    padding-top: 4px;
+    padding-left: 4px;
+    
 }
 
-.etoile-active
-{
-    color: #0065FC;
-}
+/* Section 1 Populaires */
 
-.etoile-inactive
+.sectionB
 {
-    color: #F2F2F2;
+    border: 2px solid green;
+    border-radius: 20px;
+    padding-left: 39px;
+    padding-right: 39px;
+    width: 24%;
+    background-color: #F2F2F2;
 }
 
 .lespluspopulaires
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .chart-line
@@ -351,9 +404,8 @@ img             /* A MODIFIER */
 
 .trois-photos > div
 {
-    border: 2px solid green;
-    width: 80%;
-    margin-left: 10%;
+    border: 2px solid rgb(223, 135, 19);
+    border-radius: 15px;
     background-color: white;
 }
 
@@ -365,6 +417,8 @@ img             /* A MODIFIER */
 
 .trois-photos img
 {
+    border-radius: 15px 0 0 15px;
+    max-height: 97%;
     width: 40%;
     height: 148px;
 }
@@ -386,6 +440,8 @@ img             /* A MODIFIER */
     margin-top: 25px;
 }
 
+/* Section 2 Activites */
+
 #photosactivites
 {
     display: flex;
@@ -406,37 +462,7 @@ img             /* A MODIFIER */
     margin-left: 4%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#section1
-{
-    display: flex;
-    justify-content: space-around;
-}
+/* Footer */
 
 footer
 {
