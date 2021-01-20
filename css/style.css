@@ -1,13 +1,12 @@
-@font-face 
-{
-    font-family: 'Raleway';
-    src: url('static/Raleway-Regular.ttf');
-}
-
 body
 {
-    font-family: 'raleway';
-    font-size: 1.2em;
+    font-family: 'raleway', sans-serif;
+
+}
+
+header, #hotels, #activites
+{
+    padding-left: 54px;
 }
 
 a
@@ -15,9 +14,14 @@ a
     text-decoration: none;
 }
 
+a:hover
+{
+    border-top: 2px solid #0065FC;
+    margin-top: -49px;
+}
+
 #headerligne1
 {
-    border: red 2px solid;
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -25,7 +29,6 @@ a
 
 #headerligne1d
 {
-    border: blue 2px solid;
     width: 50%;
     display: flex;
     justify-content: flex-end;
@@ -34,12 +37,11 @@ a
 h1
 {
     border: 2px solid blue;
-    font-size: 1.2em;
+    font-size: 20px;
 }
 
 .element
 {
-    border: green 2px solid;
     padding-top: 10px;
     width: 30%;
     text-align: center;
@@ -47,70 +49,66 @@ h1
 
 .ligne3
 {
-    border: 2px solid rgb(87, 160, 87);
-    margin-top: -20px;
+    margin-top: -18px;
 }
 
-#rechercher
+form
 {
-    border: blue 2px solid;
+    margin-top: 19px;
     display: flex;
-    margin-top: -18px;
 }
 
 .mapmarker
 {
     width: 40px;
     height: 40px;
-    text-align: center;
-    margin-top: 12px;
     border-radius: 10px 0 0 10px;
     background-color: #F2F2F2;
 }
 
-.mapmarker0
+#mapmarker
 {
-    width: 50%;
-    height: 50%;
-    margin-top: 0px;
-    padding-top: 9px;
-}
+    position: relative;
+    left: 14px;
+    top: 10px;
 
-.champ
-{
-    height: 25px;
-    margin-bottom: 15px;
-}
-
-.rech
-{
-    color: white;
-    position: absolute;
-    right: 1270px;
-    bottom: 695px;
 }
 .champville
 {
-    width: 220px;
-    height: 33px;
-    margin-top: -20px;
-    margin-left: -3px;
+    width: 234px;
+    height: 34px;
 }
 
-.champ2
+.champrecherche
 {
-    width: 140px;
-    height: 41px;
-    margin-top: -8px;
-    margin-left: -3px;
-    font-size: 1.9em;
+    width: 134px;
+    height: 40px;
+    font-size: 1em;
     background-color: #0065FC;
+    color: white;
+    border-radius: 0 10px 10px 0;
 }
 
 h2
 {
-    font-size: 0.9em;
+    font-size: 16px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #filtres
 {
@@ -119,7 +117,7 @@ h2
 
 .filtres
 {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 #eco
@@ -127,20 +125,47 @@ h2
     display: flex;
 }
 
+.titrefiltre
+{
+    border: 2px solid #F2F2F2;
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+    height: 37px;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.title
+{
+    margin-top: 8px;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.title:hover
+{
+    color: rgb(218, 7, 7);
+    text-decoration: underline;
+
+}
+
 .billet
 {
-    width: 25px;
-    height: 20px;
+    width: 40px;
+    height: 35px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 25px;
     margin-top: 15px;
     padding-top: 5px;
     background-color: #DEEBFF;
 }
 
-.billet0
+#billet0
 {
-    width: 60%;
-    height: 70%;
-    padding-left: 5px;
+    color: #0065FC;
+    position: relative;
+    left: 10px;
+    top: 6px;
 }
 
 #famille
@@ -150,18 +175,21 @@ h2
 
 .enfant
 {
-    width: 25px;
-    height: 20px;
+    width: 40px;
+    height: 35px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 25px;
     margin-top: 15px;
     padding-top: 5px;
     background-color: #DEEBFF;
 }
 
-.enfant0
+#enfant0
 {
-    width: 60%;
-    height: 70%;
-    padding-left: 5px;
+    color: #0065FC;
+    position: relative;
+    left: 14px;
+    top: 6px;
 }
 
 #romantic
@@ -171,18 +199,21 @@ h2
 
 .coeur
 {
-    width: 25px;
-    height: 20px;
+    width: 40px;
+    height: 35px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 25px;
     margin-top: 15px;
     padding-top: 5px;
     background-color: #DEEBFF;
 }
 
-.coeur0
+#coeur0
 {
-    width: 60%;
-    height: 70%;
-    padding-left: 5px;
+    color: #0065FC;
+    position: relative;
+    left: 12px;
+    top: 7px;
 }
 
 #pet
@@ -192,24 +223,54 @@ h2
 
 .chien
 {
-    width: 25px;
-    height: 20px;
+    width: 40px;
+    height: 35px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 25px;
     margin-top: 15px;
     padding-top: 5px;
     background-color: #DEEBFF;
 }
 
-.chien0
+#chien0
 {
-    width: 60%;
-    height: 70%;
-    padding-left: 5px;
+    color: #0065FC;
+    position: relative;
+    left: 12px;
+    top: 4px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #pointinfo
 {
     display: flex;
 }
+
 .info
 {
     width: 25px;
@@ -307,10 +368,12 @@ img             /* A MODIFIER */
     width: 40%;
     height: 148px;
 }
+
 .photo7
 {
     display: flex;
 }
+
 .photo8
 {
     display: flex;
@@ -337,6 +400,7 @@ img             /* A MODIFIER */
 {
     border: yellow 2px solid;
 }
+
 .photoB-C, .photoD, .photoE-F
 {
     margin-left: 4%;
@@ -368,20 +432,16 @@ img             /* A MODIFIER */
 
 
 
-footer
-{
-    background-color: #F2F2F2;
-}
-
 #section1
 {
     display: flex;
     justify-content: space-around;
 }
 
-#pieddepage
+footer
 {
-    font-size: 0.8em;
+    background-color: #F2F2F2;
+    padding-left: 54px;
     display: flex;
     justify-content: space-between;
 }
@@ -389,4 +449,18 @@ footer
 h5
 {
     font-size: 1em;
+}
+
+
+
+
+
+
+
+
+à tester !!!!
+balise
+{
+    transform: scale();
+    transform: translate();
 }

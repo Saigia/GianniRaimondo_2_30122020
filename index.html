@@ -5,75 +5,83 @@
         <title>Reservia</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="icon" type="image/png" sizes="16x16" href="images/images/logo/Reservia@3x.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/4b0ab797d2.js" crossorigin="anonymous"></script>
     </head>
+
+
     <body>
         <!--Header 5 lignes-->
         <header> 
-            <!--Header ligne 1-->
-           <div id="headerligne1">
-               <div class="elementhl1"><img src="images/images/logo/Reservia.svg" alt="logoreservia"></div>
+            
+           <div id="headerligne1"> <!--Header ligne 1-->
+               <div><img src="images/images/logo/Reservia.svg" alt="logoreservia"></div>
                <div id="headerligne1d" class="elementhl1g">
                     <div class="element"><a href="#hébergements">Hébergements</a></div>
                     <div class="element"><a href="#Activités">Activités</a></div>
                     <div class="element"><a href="#S'inscrire">S'inscrire</a></div>
                </div>
            </div>
-           <!--Header ligne 2-->
-           <p><h1>Trouvez votre hébergement pour des vacances de rêve</h1></p> 
-           <p class="ligne3">plein centre ville ou en pleine nature</p>
-           <!--Header ligne 3-->
-           <div id="rechercher"> 
-                <div class="mapmarker"><img src="images/Fonts/map-marker-alt-solid.svg" alt="mapmaker" class="mapmarker0"/></div> <!--Header ligne 3 element 1-->
-                <nav class="champ"> <!--Header ligne 3 element 2-->
-                    <form method="POST" action="traitement.php">
-                        <p><input type="text" name="ville" class="champville"/></p>
-                    </form>
-                </nav>
-                <nav class="bouton"> <!--Header ligne 3 element 3-->
-                    <form method="POST" action="traitement.php">
-                        <p><input type="button" name="rechercher" class="champ2" /><p class="rech">Rechercher</p></p>
-                    </form>
-                </nav>
-           </div>
+           
+           <p><h1>Trouvez votre hébergement pour des vacances de rêve</h1></p> <!--Header ligne 2-->
+           <p class="ligne3">En plein centre ville ou en pleine nature</p>
+           
+            <form method="POST" action="traitement.php"> <!--Header ligne 3--> 
+                <span class="mapmarker"><i id="mapmarker" class="fas fa-map-marker-alt"></i></span> <!--Header ligne 3 element 1-->
+                <input class="champville" type="text" name="ville" placeholder="Marseille,France"/> <!--Header ligne 3 element 2-->                 
+                <input class="champrecherche" type="submit" value="Rechercher" /> <!--Header ligne 3 element 3-->
+                <!-- <span class="loupe"><i class="fas fa-search"></i></span> -->        <!--pour mode mobile, à parametrer !!!!!!!!!!-->
+            </form>
+           
 
 
 
 
 
 
-           <!--Header ligne 4-->
-           <div id="filtres"> 
-               <div class="filtres">Filtres</div> <!--Header ligne 4 element 1-->
+
+
+
+
+
+           <div id="filtres"> <!--Header ligne 4-->
+               <div class="filtres"><strong>Filtres</strong></div> <!--Header ligne 4 element 1-->
                <div class="economique" id="eco"> <!--Header ligne 4 element 2-->
-                   <div class="billet"><img src="images/Fonts/money-bill-wave-solid.svg" alt="billet" class="billet0"/></div>
-                   <div class="billet1"><p>Économique</p></div>
+                   <div class="billet"><i id="billet0" class="fas fa-money-bill-wave"></i></div>
+                   <div class="titrefiltre"><p class="title"><strong>Économique</strong></p></div>
                </div>
                 <div class="familial" id="famille"> <!--Header ligne 4 element 3-->
-                    <div class="enfant"><img src="images/Fonts/child-solid.svg" alt="enfant" class="enfant0"/></div>
-                   <div class="enfant1"><p>Familial</p></div>
+                    <div class="enfant"><i id="enfant0" class="fas fa-child"></i></div>
+                   <div class="titrefiltre"><p class="title"><strong>Familial</strong></p></div>
                 </div>
                 <div class="romantic" id="romantic"> <!--Header ligne 4 element 4-->
-                    <div class="coeur"><img src="images/Fonts/heart-solid.svg" alt="coeur" class="coeur0"/></div>
-                   <div class="coeur1"><p>Romantique</p></div>
+                    <div class="coeur"><i id="coeur0" class="fas fa-heart"></i></div>
+                   <div class="titrefiltre"><p class="title"><strong>Romantique</strong></p></div>
                 </div>
                 <div class="pet" id="pet"> <!--Header ligne 4 element 5-->
-                    <div class="chien"><img src="images/Fonts/dog-solid.svg" alt="chien" class="chien0"/></div>
-                   <div class="chien1"><p>Animaux autorisés</p></div>
+                    <div class="chien"><i id="chien0" class="fas fa-dog"></i></div>
+                   <div class="titrefiltre"><p class="title"><strong>Animaux autorisés</strong></p></div>
                 </div>
            </div>
-
-
            
-           <!--Header ligne 5-->
-           <div id="pointinfo"> 
+
+
+
+
+
+
+
+
+
+           <div id="pointinfo"> <!--Header ligne 5-->
                 <div class="info"><img src="images/Fonts/info-solid.svg" alt="pointinfo" class="info0"/></div> <!--Header ligne 5 element 1-->
                 <div class="info1"><p>Plus de 500 logements sont disponibles dans cette ville</p></div> <!--Header ligne 5 element 2-->
            </div>
         </header>
 
-        <!--Section 1, bloc Hebergement à Marseille + les plus populaires-->
-        <section id="hotels">
+        <section id="hotels"> <!--Section 1, bloc Hebergement à Marseille + les plus populaires-->
+
             <section class="section1" id="hebergement"> <!--Section gauche Hebergement-->
                 <p class="titre1"><h1>Hébergements à Marseille</h1></p>
                 <aside class="six-photos">
@@ -251,7 +259,7 @@
         </section>
 
         <!--footer-->
-        <footer id="pieddepage">
+        <footer>
             <div class="apropos">
                 <h5>A propos</h5>
                 <p>Fonctionnement du site</p>
