@@ -1,9 +1,8 @@
-/* General */
+/*---------------- General -------------------*/
 
 body
 {
     font-family: 'raleway', sans-serif;
-
 }
 
 h1
@@ -12,27 +11,19 @@ h1
     font-size: 20px;
 }
 
-/* Header*/
+h5
+{
+    font-size: 1em;
+}
+
+/*----------------------- Header -----------------*/
 
 header
 {
     padding-left: 54px;
 }
 
-/* Header ligne 1 Logo & Liens*/
-
-a
-{
-    height: 60px;
-    padding-top: 48px;
-    margin-bottom: 10px;
-    text-decoration: none;
-}
-
-a:hover
-{
-    border-top: 2px solid #0065FC;
-}
+    /*------------ Header ligne 1 Logo & Liens ---------*/
 
 #headerligne1
 {
@@ -45,36 +36,52 @@ a:hover
 
 #headerligne1d
 {
-    width: 50%;
+    width: 33%;
     height: 50px;
     margin-top: 10px;
     display: flex;
-    justify-content: flex-end;
 }
 
-.element
+nav a
 {
-    
+    color: black;
+    padding-top: 48px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+nav strong
+{
+    color: #0065FC;
+}
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+.element, .inscription
+{
     width: 30%;
     height: 100%;
     text-align: center;
-    
 }
 
-/* Header ligne 2 et 3 Titre */
+    /*------------ Header ligne 2 et 3 Titre -------------*/
 
 .ligne3
 {
     margin-top: -18px;
 }
 
-/* Header ligne 4 Navigation */
+    /*-------------- Header ligne 4 Navigation --------------*/
 
 form
 {
     margin-top: 19px;
     display: flex;
     padding-left: 4px;
+    align-items: flex-start;
 }
 
 .mapmarker
@@ -90,158 +97,102 @@ form
     position: relative;
     left: 14px;
     top: 10px;
-
 }
+
 .champville
 {
+    font-weight: bold;
     width: 234px;
     height: 34px;
 }
 
 .champrecherche
 {
+    font-weight: bold;
     width: 134px;
-    height: 40px;
+    height: 44px;
     font-size: 1em;
     background-color: #0065FC;
     color: white;
     border-radius: 0 10px 10px 0;
+    border: 2px solid #F2F2F2;
+    margin-left: -2px;
+    margin-top: -2px;
 }
 
-/* Header ligne 5 Filtres */
+    /*---------------- Header ligne 5 Filtres --------------*/
 
 #filtres
 {
+    width: 70%;
     display: flex;
     padding-left: 11px;
 }
 
-.filtres
+#filtres h2
 {
-    margin-top: 25px;
+    padding-top: 13px;
 }
 
-#eco
+.f
 {
     display: flex;
-}
-
-.titrefiltre
-{
-    border: 2px solid #F2F2F2;
-    border-radius: 0 20px 20px 0;
-    border-left: none;
-    height: 37px;
-    margin-top: 15px;
-    margin-left: -15px;
-}
-
-.title
-{
-    margin-top: 8px;
-    padding-left: 30px;
-    padding-right: 15px;
-}
-
-.title:hover
-{
-    color: rgb(218, 7, 7);
-    text-decoration: underline;
-
-}
-
-.billet
-{
-    width: 40px;
-    height: 35px;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    height: 40px;
     border-radius: 20px 20px 20px 20px;
     margin-left: 25px;
     margin-top: 15px;
-    padding-top: 5px;
-    background-color: #DEEBFF;
+    padding: 0 15px 0 0;
+    border: 1px solid #F2F2F2;
 }
 
-#billet0
+.icone
+{
+    width: 20px;
+    background-color: #deebff;
+    border-radius: 20px;
+    padding: 9px;
+    transform:scale(1.1)
+}
+
+.f i
 {
     color: #0065FC;
-    position: relative;
-    left: 10px;
-    top: 6px;
 }
 
-#famille
+.f a
 {
-    display: flex;
+    color: black;
+    padding-left: 20px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.enfant
+.f:hover
 {
-    width: 40px;
-    height: 35px;
-    border-radius: 20px 20px 20px 20px;
-    margin-left: 25px;
-    margin-top: 15px;
-    padding-top: 5px;
-    background-color: #DEEBFF;
+    color: white;
+    background-color: #0065FC;
 }
 
-#enfant0
+.f:hover a
 {
-    color: #0065FC;
-    position: relative;
-    left: 14px;
-    top: 6px;
+    color: white;
 }
 
-#romantic
+#logo1
 {
-    display: flex;
+    padding-left: 4px;
 }
 
-.coeur
+#logo2
 {
-    width: 40px;
-    height: 35px;
-    border-radius: 20px 20px 20px 20px;
-    margin-left: 25px;
-    margin-top: 15px;
-    padding-top: 5px;
-    background-color: #DEEBFF;
+    padding-top: 2px;
+    padding-left: 2px;
 }
 
-#coeur0
-{
-    color: #0065FC;
-    position: relative;
-    left: 12px;
-    top: 7px;
-}
-
-#pet
-{
-    display: flex;
-}
-
-.chien
-{
-    width: 40px;
-    height: 35px;
-    border-radius: 20px 20px 20px 20px;
-    margin-left: 25px;
-    margin-top: 15px;
-    padding-top: 5px;
-    background-color: #DEEBFF;
-}
-
-#chien0
-{
-    color: #0065FC;
-    position: relative;
-    left: 12px;
-    top: 4px;
-}
-
-/* Header ligne 6 Point-info */
+    /*--------------- Header ligne 6 Point-info -------------*/
 
 #pointinfo
 {
@@ -274,33 +225,7 @@ form
     margin-left: 12px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Section 1 Hotels - Populaires */
+/*-------------- Section 1 Hotels - Populaires --------------*/
 
 h2
 {
@@ -313,23 +238,19 @@ h2
     padding-right: 50px;
 }
 
-img             /* PEUT-ETRE A MODIFIER */
-{
-    max-width: 100%;
-    max-height: 100%;
-}
-
 .etoile-active
 {
     color: #0065FC;
+    margin: 5px 0 0 0;
 }
 
 .etoile-inactive
 {
     color: #F2F2F2;
+    margin: 5px 0 0 0;
 }
 
-/* Section 1 Hotels */
+    /*---------------- Section 1 Hotels --------------*/
 
 #hotels
 {
@@ -337,19 +258,28 @@ img             /* PEUT-ETRE A MODIFIER */
     justify-content: space-between;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #sectionA
-{
-
-    display: flex;
-    justify-content: space-around;
-}
-
-.sectionA
 {
     border: 2px solid green;
     border-radius: 20px;
     padding-left: 39px;
     padding-right: 39px;
+    padding-bottom: 25px;
     width: 63%;
     background-color: #F2F2F2;
 }
@@ -361,25 +291,65 @@ img             /* PEUT-ETRE A MODIFIER */
     justify-content: space-between;
 }
 
-.six-photos > div
+.six-photos a
 {
+    color: black;
+    text-decoration: none;
+    width: 30%;
+    height: 250px;
     border: 2px solid red;
     border-radius: 16px;
-    width: 30%;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
+    padding: 3px;
     background-color: white;
 }
 
 .six-photos img
 {
     border-radius: 15px 15px 0 0;
-    max-width: 97%;
+    width: 98%;
+    height: 155px;
     padding-top: 4px;
     padding-left: 4px;
-    
+    object-fit: cover;
 }
 
-/* Section 1 Populaires */
+.six-photos h5
+{
+    margin: 5px 0;
+    padding-left: 15px;
+}
+
+.six-photos p
+{
+    margin: 8px 0;
+    padding-left: 15px;
+}
+
+.titrefin
+{
+    margin-top: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*----------------- Section 1 Populaires --------------*/
 
 .sectionB
 {
@@ -440,7 +410,7 @@ img             /* PEUT-ETRE A MODIFIER */
     margin-top: 25px;
 }
 
-/* Section 2 Activites */
+/*--------------- Section 2 Activites ---------------*/
 
 #photosactivites
 {
@@ -462,7 +432,7 @@ img             /* PEUT-ETRE A MODIFIER */
     margin-left: 4%;
 }
 
-/* Footer */
+/*------------------- Footer --------------------*/
 
 footer
 {
@@ -472,10 +442,22 @@ footer
     justify-content: space-between;
 }
 
-h5
+footer a
 {
-    font-size: 1em;
+    text-decoration: none;
+    color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

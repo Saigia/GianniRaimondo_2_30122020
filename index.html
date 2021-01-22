@@ -11,16 +11,16 @@
     </head>
     <body>
 
-        <!--Header 6 lignes-->
+<!----------------------------Header 6 lignes---------------------------->
         <header> 
             
            <div id="headerligne1"> <!--Header ligne 1-->
                <div><img src="images/images/logo/Reservia.svg" alt="logoreservia"></div>
-               <div id="headerligne1d" class="elementhl1g">
-                    <div class="element"><a href="#hébergements">Hébergements</a></div>
-                    <div class="element"><a href="#Activités">Activités</a></div>
-                    <div class="element"><a href="#S'inscrire">S'inscrire</a></div>
-               </div>
+               <nav id="headerligne1d">
+                    <div class="element"><a href="#sectionA">Hébergements</a></div>
+                    <div class="element"><a href="#activites">Activités</a></div>
+                    <div class="inscription"><a href="#"><strong>S'inscrire</strong></a></div>
+               </nav>
            </div>
            
            <p><h1>Trouvez votre hébergement pour des vacances de rêve</h1></p> <!--Header ligne 2-->
@@ -33,24 +33,12 @@
                 <!-- <span class="loupe"><i class="fas fa-search"></i></span> -->        <!--pour mode mobile, à parametrer !!!!!!!!!!-->
             </form>
            
-           <div id="filtres"> <!--Header ligne 5-->
-               <div class="filtres"><strong>Filtres</strong></div> <!--Header ligne 4 element 1-->
-               <div class="economique" id="eco"> <!--Header ligne 4 element 2-->
-                   <div class="billet"><i id="billet0" class="fas fa-money-bill-wave"></i></div>
-                   <div class="titrefiltre"><p class="title"><strong>Économique</strong></p></div>
-               </div>
-                <div class="familial" id="famille"> <!--Header ligne 4 element 3-->
-                    <div class="enfant"><i id="enfant0" class="fas fa-child"></i></div>
-                   <div class="titrefiltre"><p class="title"><strong>Familial</strong></p></div>
-                </div>
-                <div class="romantic" id="romantic"> <!--Header ligne 4 element 4-->
-                    <div class="coeur"><i id="coeur0" class="fas fa-heart"></i></div>
-                   <div class="titrefiltre"><p class="title"><strong>Romantique</strong></p></div>
-                </div>
-                <div class="pet" id="pet"> <!--Header ligne 4 element 5-->
-                    <div class="chien"><i id="chien0" class="fas fa-dog"></i></div>
-                   <div class="titrefiltre"><p class="title"><strong>Animaux autorisés</strong></p></div>
-                </div>
+           <div id="filtres"> <!--Header ligne 5 filtres-->
+               <h2>Filtres</h2>
+                    <div class="f"><span class="icone"><i class="fas fa-money-bill-wave"></i></span><a href="#">Économique</a></div> <!--Header ligne 4 element 2-->
+                    <div class="f"><span class="icone"><i id="logo1" class="fas fa-child"></i></span><a href="#">Familial</a></div> <!--Header ligne 4 element 3-->
+                    <div class="f"><span class="icone"><i id="logo2" class="fas fa-heart"></i></span><a href="#">Romantique</a></div> <!--Header ligne 4 element 4-->
+                    <div class="f"><span class="icone"><i class="fas fa-dog"></i></span><a href="#">Animaux autorisés</a></div> <!--Header ligne 4 element 5-->
            </div>
            
            <div id="pointinfo"> <!--Header ligne 6-->
@@ -59,13 +47,13 @@
            </div>
         </header>
 
-        <!--Section 1, bloc Hebergement à Marseille + les plus populaires-->
+<!-----------------------------Section 1, (bloc Hebergement à Marseille + les plus populaires)------------------------------->
         <section id="hotels"> 
-
-            <section class="sectionA" id="hebergement"> <!--Section gauche Hebergement-->
+    <!---------------------------Section gauche Hebergement------------------------------->
+            <section id="sectionA"> 
                 <p class="titre1"><h1>Hébergements à Marseille</h1></p>
                 <aside class="six-photos">
-                    <div class="photo1">
+                    <a href="#">
                         <img src="images/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo1" />
                         <div class="description-hotel">
                             <h5>Auberge la Cannebière</h5>
@@ -78,8 +66,8 @@
                                 <span class="etoile-inactive fas fa-star"></span>
                             </p>
                         </div>
-                    </div> <!--regler les marges et decoupage photo-->
-                    <div class="photo2">
+                    </a> <!--regler les marges et decoupage photo-->
+                    <a href="#">
                         <img src="images/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo2" />
                         <div class="description-hotel">
                             <h5>Hôtel du port</h5>
@@ -92,8 +80,8 @@
                                 <span class="etoile-active fas fa-star"></span>
                             </p>
                         </div>
-                    </div> <!--regler les marges et decoupage photo-->
-                    <div class="photo3">
+                    </a> <!--regler les marges et decoupage photo-->
+                    <a href="#">
                         <img src="images/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo3" />
                         <div class="description-hotel">
                             <h5>Hôtel Les mouettes</h5>
@@ -106,8 +94,8 @@
                                 <span class="etoile-inactive fas fa-star"></span>
                             </p>
                         </div>
-                    </div> <!--regler les marges et decoupage photo-->
-                    <div class="photo4">
+                    </a> <!--regler les marges et decoupage photo-->
+                    <a href="#">
                         <img src="images/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo4" />
                         <div class="description-hotel">
                             <h5>Hôtel de la mer</h5>
@@ -120,8 +108,8 @@
                                 <span class="etoile-inactive fas fa-star"></span>
                             </p>
                         </div>
-                    </div> <!--regler les marges et decoupage photo-->
-                    <div class="photo5">
+                    </a> <!--regler les marges et decoupage photo-->
+                    <a href="#">
                         <img src="images/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo5" />
                         <div class="description-hotel">
                             <h5>Auberge Le Panier</h5>
@@ -134,8 +122,8 @@
                                 <span class="etoile-inactive fas fa-star"></span>
                             </p>
                         </div>
-                    </div> <!--regler les marges et decoupage photo-->
-                    <div class="photo6">
+                    </a> <!--regler les marges et decoupage photo-->
+                    <a href="#">
                         <img src="images/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo6" />
                         <div class="description-hotel">
                             <h5>Hôtel chez Amina</h5>
@@ -148,12 +136,12 @@
                                 <span class="etoile-active fas fa-star"></span>
                             </p>
                         </div>
-                    </div> <!--regler les marges et decoupage photo-->
+                    </a> <!--regler les marges et decoupage photo-->
                 </aside>
                 <p class="titrefin"><h2>Afficher plus</h2></p>
             </section>
-
-            <section class="sectionB" id="populaire"> <!--Section droite populaire-->
+    <!-----------------------Section droite populaire--------------------------->
+            <section class="sectionB" id="populaire"> 
                 <p>
                     <h1 class="lespluspopulaires">Les plus populaires<div class="chart-line fas fa-chart-line"></div></h1> 
                 </p>
@@ -204,7 +192,7 @@
             </section>
         </section>
 
-        <!--Section 2, bloc Activités à Marseille-->
+<!--------------------------------------Section 2, bloc Activités à Marseille------------------------------------->
         <section id="activites">
             <p><h1>Activités à Marseille</h1></p>
             <aside id="photosactivites">
@@ -239,23 +227,23 @@
             </aside>
         </section>
 
-        <!--footer-->
+<!---------------------------------------footer-------------------------------------------->
         <footer>
             <div class="apropos">
-                <h5>A propos</h5>
-                <p>Fonctionnement du site</p>
-                <p>Conditions générales de vente</p>
-                <p>Données et confidentialité</p>
+                <a href="#"><h5>A propos</h5></a>
+                <a href="#"><p>Fonctionnement du site</p></a>
+                <a href="#"><p>Conditions générales de vente</p></a>
+                <a href="#"><p>Données et confidentialité</p></a>
             </div>
             <div class="noshebergements">
-                <h5>Nos hébergements</h5>
-                <p>Charte qualité</p>
-                <p>Soumettre votre hôtel</p>
+                <a href="#"><h5>Nos hébergements</h5></a>
+                <a href="#"><p>Charte qualité</p></a>
+                <a href="#"><p>Soumettre votre hôtel</p></a>
             </div>
             <div class="assistance">
-                <h5>Assistance</h5>
-                <p>Centre d'aide</p>
-                <p>Nous contacter</p>
+                <a href="#"><h5>Assistance</h5></a>
+                <a href="#"><p>Centre d'aide</p></a>
+                <a href="#"><p>Nous contacter</p></a>
             </div>
             <div>
 
