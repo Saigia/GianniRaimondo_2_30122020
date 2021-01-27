@@ -1,4 +1,4 @@
-/*---------------- General -------------------*/
+/* GENERAL -------------------------------------*/
 
 body
 {
@@ -15,14 +15,14 @@ h5
     font-size: 1em;
 }
 
-/*----------------------- Header -----------------*/
+/* HEADER --------------------------------------*/
 
 header
 {
     padding-left: 54px;
 }
 
-    /*------------ Header ligne 1 Logo & Liens ---------*/
+/*----------------- Header ligne 1 Logo & Liens */
 
 #headerligne1
 {
@@ -33,7 +33,7 @@ header
     justify-content: space-between;
 }
 
-#headerligne1d
+nav
 {
     width: 33%;
     height: 50px;
@@ -45,6 +45,8 @@ nav a
 {
     color: black;
     padding-top: 48px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: 10px;
     text-decoration: none;
 }
@@ -59,21 +61,21 @@ nav a:hover
     border-top: 2px solid #0065FC;
 }
 
-.element, .inscription
+.element1, .element2, .inscription
 {
     width: 30%;
     height: 100%;
     text-align: center;
 }
 
-    /*------------ Header ligne 2 et 3 Titre -------------*/
+/*------------------- Header ligne 2 et 3 Titre */
 
 .ligne3
 {
     margin-top: -18px;
 }
 
-    /*-------------- Header ligne 4 Navigation --------------*/
+/*------------------- Header ligne 4 Navigation */
 
 form
 {
@@ -119,18 +121,23 @@ form
     margin-top: -2px;
 }
 
-    /*---------------- Header ligne 5 Filtres --------------*/
+.loupe
+{
+    display: none;
+}
+
+/*---------------------- Header ligne 5 Filtres */
 
 #filtres
 {
-    width: 70%;
     display: flex;
-    padding-left: 11px;
+    flex-wrap: wrap;
 }
 
 #filtres h2
 {
     padding-top: 13px;
+    margin-right: 20px;
 }
 
 .f
@@ -141,10 +148,10 @@ form
     width: auto;
     height: 40px;
     border-radius: 20px 20px 20px 20px;
-    margin-left: 25px;
+    margin-right: 25px;
     margin-top: 15px;
     padding: 0 15px 0 0;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #d6d4d4;
 }
 
 .icone
@@ -164,7 +171,7 @@ form
 .f a
 {
     color: black;
-    padding-left: 20px;
+    padding-left: 15px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -191,7 +198,7 @@ form
     padding-left: 2px;
 }
 
-    /*--------------- Header ligne 6 Point-info -------------*/
+/*------------------- Header ligne 6 Point-info */
 
 #pointinfo
 {
@@ -224,7 +231,7 @@ form
     margin-left: 12px;
 }
 
-/*-------------- Section 1 Hotels - Populaires --------------*/
+/* SECTION 1 - Hotels - Populaires -------------*/
 
 h2
 {
@@ -249,7 +256,7 @@ h2
     margin: 5px 0 0 0;
 }
 
-    /*---------------- Section 1 Hotels --------------*/
+/*---------------------------- Section 1 Hebergement */
 
 #hotels
 {
@@ -313,7 +320,7 @@ h2
     margin-top: -20px;
 }
 
-    /*----------------- Section 1 Populaires --------------*/
+/*------------------------ Section 1 Populaires */
 
 .sectionB
 {
@@ -354,6 +361,11 @@ h2
     object-fit: cover;
 }
 
+.photo9 img
+{
+    min-width: 143px;
+}
+
 .trois-photos h5
 {
     margin-top: 13px;
@@ -383,7 +395,7 @@ h2
     padding-bottom: -10px;
 }
 
-/*--------------- Section 2 Activites ---------------*/
+/* SECTION 2 - Activites -----------------------*/
 
 #activites h1
 {
@@ -401,7 +413,7 @@ h2
     border-radius: 15px;
     width: 23%;
     height: 500px;
-    box-shadow: 2px 2px #f2f2f2;
+    box-shadow: 0 5px 10px #e2dfdf;
 }
 
 .colonne2-4
@@ -435,9 +447,9 @@ h2
 
 #photo2-1, #photo2-2, #photo4-1, #photo4-2 
 {
-    border-radius: 0 0 15px 15px;
+    border-radius: 15px;
    
-    box-shadow: 2px 2px #F2F2F2;
+    box-shadow: 0 5px 10px #e2dfdf;
 }
 
 #photo2-2, #photo4-2
@@ -478,7 +490,7 @@ h2
     bottom: 15px;
 }
 
-/*------------------- Footer --------------------*/
+/* FOOTER --------------------------------------*/
 
 footer
 {
@@ -493,4 +505,320 @@ footer a
 {
     text-decoration: none;
     color: black;
+}
+
+
+
+
+
+/*-------------- Style Mobile ---------------*/
+
+
+
+
+
+
+@media screen and (max-width: 767px)
+{
+    body
+    {
+        overflow-x: hidden;
+    }
+
+    /*--Mobile header entete--*/
+
+    header
+    {
+        padding-left: 20px;
+    }
+
+    #headerligne1 img
+    {
+        position: absolute;
+        top: 0;
+        left: 25px;
+    }
+
+    .inscription
+    {
+        position: absolute;
+        top: 15px;
+        right: 5px;
+        height: 20px;
+        margin-bottom: -10px;
+    }
+
+    nav
+    {
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    nav .element1
+    {
+        margin-right: 25px;
+        margin-left: -60px;
+        padding: 0 5px 10px 5px;
+    }
+
+    nav .element2
+    {
+        margin-left: -5px;
+        padding: 0 5px 10px 5px;
+    }
+
+    nav a
+    {
+        padding-bottom: 11px;
+        padding-top: 20px;
+    }
+
+    .element1 a:hover, .element2 a:hover
+    {
+        color: #0065FC;
+        border-top: initial;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    nav .inscription:hover
+    {
+        border-bottom: none;
+    }
+
+    .trait
+    {
+        margin-left: -18px;
+        padding-right: 50px;
+        width: 92%;
+        padding-bottom: 5px;
+        border-bottom: 2px #F2F2F2 solid;
+    }
+
+    /*--Mobile header form--*/
+
+    form
+    {
+        padding-left: 0;
+    }
+
+    .champville
+    {
+        width: 75%;
+        margin-right: -15px;
+        padding-left: 10px;
+        border: 2px solid #F2F2F2;
+    }
+
+    .champrecherche
+    {
+        width: 44px;
+        padding-right: 15px;
+        border-radius: 15px;
+    }
+
+    .bouton
+    {
+        display: none;
+    }
+
+    .loupe
+    {
+        color: white;
+        padding-left: 5px;
+        display: initial;
+    }
+
+    /*--Mobile header filtres--*/
+
+    .f
+    {
+        margin-right: 10px;
+    }
+
+    #filtres h2
+    {
+        width: 100%;
+    }
+
+    /*--Mobile header pointinfo--*/
+
+    .info
+    {
+        width: 29px;
+    }
+
+    #pointinfo
+    {
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+
+    /*--Mobile section général--*/
+
+    #hotels
+    {
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*--Mobile section populaire--*/
+
+    .sectionB
+    {
+        border-radius: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 35px;
+        width: 95%;
+        padding-top: 10px;
+
+    }
+
+    .photo8, .photo9
+    {
+        margin-top: 10px;
+    }
+
+    .trois-photos
+    {
+        justify-content: space-between;
+    }
+
+    .trois-photos a
+    {
+        height: 135px;
+        padding: 5px 5px 2px 5px;
+    }
+
+    .trois-photos h5
+    {
+        margin-bottom: -7px;
+    }
+
+    .photo9 img
+    {
+        min-width: 126px;
+    }
+
+
+    .nuit1, .nuit2, .nuit3
+    {
+        margin-bottom: 22px;
+    }
+    .note
+    {
+        margin-top: -1px;
+    }
+
+    .photo9 img  /*--AGRANDIR IMAGE--*/
+    {
+        /*size: 134px 130px;*/
+    }
+
+    /*--Mobile section hebergement--*/
+
+    #sectionA
+    {
+        margin-left: 5%;
+        background-color: white;
+        width: 90%;
+        padding-left: 0;
+    }
+
+    #sectionA h1
+    {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .six-photos
+    {
+        flex-direction: column;
+    }
+
+    .six-photos img
+    {
+        height: 120px;
+    }
+
+    .six-photos a
+    {
+        margin-top: -25px;
+        height: 215px;
+        width: 100%;
+        box-shadow: 0 5px 25px #e2dddd;
+    }
+
+    /*--Mobile section activite--*/
+
+    #activites
+    {
+        margin-left: 5%;
+        width: 90%;
+        margin-top: -45px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #activites h1
+    {
+        margin-bottom: 130px;
+    }
+    #photosactivites
+    {
+        flex-direction: column;
+    }
+
+    #photosactivites img
+    {
+        height: 130px;
+    }
+
+    #photoactivites a
+    {
+        height: 185px;
+    }
+
+    .colonne1-3
+    {
+        height: 185px;
+        margin-top: -108px;
+    }
+
+    .colonne2-4
+    {
+        margin-top: 15px;
+    }
+
+    #photo2-2
+    {
+        margin-top: -10px;
+    }
+
+    .colonne1-3, .colonne2-4
+    {
+        width: 100%;
+    }
+
+    #photo4-2
+    {
+        margin-top: -10px;
+    }
+
+    /*--Mobile footer--*/
+
+    footer
+    {
+        flex-direction: column;
+        width: 93%;
+        margin-top: -70px;
+        padding-left: 25px;
+        padding-top: 15px;
+    }
+
+    
+    
 }

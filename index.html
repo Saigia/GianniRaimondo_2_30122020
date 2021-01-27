@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <title>Reservia</title>
-        <link rel="stylesheet" href="css/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" /> <!--écran ordi--> 
+        
         <link rel="icon" type="image/png" sizes="16x16" href="images/images/logo/Icone-logo.png">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
@@ -16,21 +18,23 @@
             
            <div id="headerligne1"> <!--Header ligne 1-->
                <div><img src="images/images/logo/Reservia.svg" alt="logoreservia"></div>
-               <nav id="headerligne1d">
-                    <div class="element"><a href="#sectionA">Hébergements</a></div>
-                    <div class="element"><a href="#activites">Activités</a></div>
+               <nav>
+                    <div class="element1"><a href="#sectionA">Hébergements</a></div>
+                    <div class="element2"><a href="#activites">Activités</a></div>
                     <div class="inscription"><a href="#"><strong>S'inscrire</strong></a></div>
                </nav>
            </div>
-           
+           <div class="trait"></div>
            <p><h1>Trouvez votre hébergement pour des vacances de rêve</h1></p> <!--Header ligne 2-->
            <p class="ligne3">En plein centre ville ou en pleine nature</p> <!--Header ligne 3-->
            
             <form method="POST" action="traitement.php"> <!--Header ligne 4--> 
                 <span class="mapmarker"><i id="mapmarker" class="fas fa-map-marker-alt"></i></span> <!--Header ligne 3 element 1-->
                 <input class="champville" type="text" name="ville" placeholder="Marseille,France"/> <!--Header ligne 3 element 2-->                 
-                <input class="champrecherche" type="submit" value="Rechercher" /> <!--Header ligne 3 element 3-->
-                <!-- <span class="loupe"><i class="fas fa-search"></i></span> -->        <!--pour mode mobile, à parametrer !!!!!!!!!!-->
+                <button class="champrecherche" type="submit">
+                    <span class="bouton">Rechercher</span>
+                    <span class="loupe"><i class="fas fa-search"></i></span>
+                </button> <!--Header ligne 3 element 3-->
             </form>
            
            <div id="filtres"> <!--Header ligne 5 filtres-->
@@ -66,7 +70,7 @@
                                 <span class="etoile-inactive fas fa-star"></span>
                             </p>
                         </div>
-                    </a> <!--regler les marges et decoupage photo-->
+                    </a>
                     <a href="#">
                         <img src="images/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo2" />
                         <div class="description-hotel">
@@ -80,7 +84,7 @@
                                 <span class="etoile-active fas fa-star"></span>
                             </p>
                         </div>
-                    </a> <!--regler les marges et decoupage photo-->
+                    </a>
                     <a href="#">
                         <img src="images/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo3" />
                         <div class="description-hotel">
@@ -94,7 +98,7 @@
                                 <span class="etoile-inactive fas fa-star"></span>
                             </p>
                         </div>
-                    </a> <!--regler les marges et decoupage photo-->
+                    </a>
                     <a href="#">
                         <img src="images/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo4" />
                         <div class="description-hotel">
@@ -108,7 +112,7 @@
                                 <span class="etoile-inactive fas fa-star"></span>
                             </p>
                         </div>
-                    </a> <!--regler les marges et decoupage photo-->
+                    </a>
                     <a href="#">
                         <img src="images/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo5" />
                         <div class="description-hotel">
@@ -122,7 +126,7 @@
                                 <span class="etoile-inactive fas fa-star"></span>
                             </p>
                         </div>
-                    </a> <!--regler les marges et decoupage photo-->
+                    </a>
                     <a href="#">
                         <img src="images/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo6" />
                         <div class="description-hotel">
@@ -136,7 +140,7 @@
                                 <span class="etoile-active fas fa-star"></span>
                             </p>
                         </div>
-                    </a> <!--regler les marges et decoupage photo-->
+                    </a>
                 </aside>
                 <p class="titrefin"><h2>Afficher plus</h2></p>
             </section>
@@ -160,7 +164,7 @@
                             </p>
                         </div>
                     </a>
-                    <a  href="#" class="photo8">
+                    <a href="#" class="photo8">
                         <img src="images/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo8" />
                         <div class="description-hotel">
                             <h5>Au coeur de l'eau Chambres d'hötes</h5>
