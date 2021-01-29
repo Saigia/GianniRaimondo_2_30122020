@@ -10,9 +10,18 @@ h1
     font-size: 20px;
 }
 
-h5
+h2
 {
-    font-size: 1em;
+    font-size: 20px
+}
+
+h3
+{
+    font-size: 20px;
+}
+h4
+{
+    font-size: 19px;
 }
 
 /* HEADER --------------------------------------*/
@@ -35,7 +44,7 @@ header
 
 nav
 {
-    width: 33%;
+    width: 45%;
     height: 50px;
     margin-top: 10px;
     display: flex;
@@ -55,6 +64,7 @@ nav strong
 {
     color: #0065FC;
 }
+
 nav a:hover
 {
     color: #0065FC;
@@ -72,7 +82,7 @@ nav a:hover
 
 .ligne3
 {
-    margin-top: -18px;
+    margin-top: -12px;
 }
 
 /*------------------- Header ligne 4 Navigation */
@@ -105,6 +115,8 @@ form
     font-weight: bold;
     width: 234px;
     height: 34px;
+    padding-left: 10px;
+    border: 2px solid #F2F2F2;
 }
 
 .champrecherche
@@ -231,7 +243,7 @@ form
     margin-left: 12px;
 }
 
-/* SECTION 1 - Hotels - Populaires -------------*/
+/* SECTION 1 (Hebergement + Populaire) -------------*/
 
 h2
 {
@@ -246,12 +258,14 @@ h2
 
 .etoile-active
 {
+    font-size: 11px;
     color: #0065FC;
     margin: 5px 0 0 0;
 }
 
 .etoile-inactive
 {
+    font-size: 11px;
     color: #F2F2F2;
     margin: 5px 0 0 0;
 }
@@ -303,7 +317,7 @@ h2
     object-fit: cover;
 }
 
-.six-photos h5
+.six-photos h4
 {
     margin: 5px 0;
     padding-left: 15px;
@@ -324,6 +338,7 @@ h2
 
 .sectionB
 {
+    border: 2px red solid;
     border-radius: 20px;
     padding-left: 39px;
     padding-right: 39px;
@@ -366,7 +381,7 @@ h2
     min-width: 143px;
 }
 
-.trois-photos h5
+.trois-photos h4
 {
     margin-top: 13px;
     padding-left: 25px;
@@ -392,12 +407,12 @@ h2
 .note
 {
     margin-top: 35px;
-    padding-bottom: -10px;
+    margin-bottom: 0px;
 }
 
 /* SECTION 2 - Activites -----------------------*/
 
-#activites h1
+#activites h3
 {
     margin-top: 50px;
 }
@@ -425,8 +440,15 @@ h2
 
 #photosactivites a
 {
+    font-size: 19px;
+    font-weight: bold;
     color: black;
     text-decoration: none;
+}
+
+.photo1
+{
+    margin-top: 15px;
 }
 
 .colonne1-3 img
@@ -478,12 +500,12 @@ h2
     height: 170px;
 }
 
-.colonne2-4 h5
+.colonne2-4 h4
 {
     padding-bottom: 3px;
 }
 
-#photosactivites h5
+#photosactivites h4
 {
     padding-left: 20px;
     position: relative;
@@ -507,29 +529,20 @@ footer a
     color: black;
 }
 
-
-
-
-
 /*-------------- Style Mobile ---------------*/
 
-
-
-
-
-
-@media screen and (max-width: 767px)
+@media screen and (min-width: 320px) and (max-width: 767px)
 {
     body
     {
-        overflow-x: hidden;
+        margin: auto;
     }
 
     /*--Mobile header entete--*/
 
     header
     {
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
     #headerligne1 img
@@ -539,11 +552,15 @@ footer a
         left: 25px;
     }
 
+    .sousclasse
+    {
+        padding-left: 20px;
+    }
     .inscription
     {
         position: absolute;
         top: 15px;
-        right: 5px;
+        right: 25px;
         height: 20px;
         margin-bottom: -10px;
     }
@@ -558,7 +575,6 @@ footer a
     nav .element1
     {
         margin-right: 25px;
-        margin-left: -60px;
         padding: 0 5px 10px 5px;
     }
 
@@ -570,6 +586,8 @@ footer a
 
     nav a
     {
+        padding-left: 0;
+        padding-right: 0;
         padding-bottom: 11px;
         padding-top: 20px;
     }
@@ -588,9 +606,7 @@ footer a
 
     .trait
     {
-        margin-left: -18px;
-        padding-right: 50px;
-        width: 92%;
+        width: 100%;
         padding-bottom: 5px;
         border-bottom: 2px #F2F2F2 solid;
     }
@@ -604,7 +620,7 @@ footer a
 
     .champville
     {
-        width: 75%;
+        width: 68%;
         margin-right: -15px;
         padding-left: 10px;
         border: 2px solid #F2F2F2;
@@ -672,9 +688,8 @@ footer a
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 35px;
-        width: 95%;
+        width: 92%;
         padding-top: 10px;
-
     }
 
     .photo8, .photo9
@@ -689,20 +704,21 @@ footer a
 
     .trois-photos a
     {
+        width: 96%;
         height: 135px;
         padding: 5px 5px 2px 5px;
     }
 
-    .trois-photos h5
+    .trois-photos h4
     {
+        font-size: medium;
         margin-bottom: -7px;
     }
 
     .photo9 img
     {
-        min-width: 126px;
+        min-width: 114px;
     }
-
 
     .nuit1, .nuit2, .nuit3
     {
@@ -710,15 +726,8 @@ footer a
     }
     .note
     {
-        margin-top: -1px;
+        margin-top: -8px;
     }
-
-    .photo9 img  /*--AGRANDIR IMAGE--*/
-    {
-        /*size: 134px 130px;*/
-    }
-
-    /*--Mobile section hebergement--*/
 
     #sectionA
     {
@@ -726,9 +735,10 @@ footer a
         background-color: white;
         width: 90%;
         padding-left: 0;
+        padding-right: 0;
     }
 
-    #sectionA h1
+    #sectionA h3
     {
         padding-top: 10px;
         padding-bottom: 20px;
@@ -748,7 +758,7 @@ footer a
     {
         margin-top: -25px;
         height: 215px;
-        width: 100%;
+        width: 98%;
         box-shadow: 0 5px 25px #e2dddd;
     }
 
@@ -763,7 +773,7 @@ footer a
         padding-right: 0px;
     }
 
-    #activites h1
+    #activites h3
     {
         margin-bottom: 130px;
     }
@@ -813,12 +823,193 @@ footer a
     footer
     {
         flex-direction: column;
-        width: 93%;
+        width: 92%;
         margin-top: -70px;
         padding-left: 25px;
         padding-top: 15px;
     }
+}
 
-    
-    
+/*-------------- Style Tablette ---------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+
+    body
+    {
+        margin: auto;
+    }
+
+    /*--Tablette header entete--*/
+
+    header
+    {
+        padding-left: 0px;
+    }
+    #headerligne1 img
+    {
+        position: absolute;
+        top: 30px;
+        left: 15px;
+    }
+
+    nav
+    {
+        justify-content: flex-end;
+        width: 75%;
+        margin-top: -10px;
+    }
+
+    nav a
+    {
+        padding: 10px 0 5px 0;
+        border-bottom: 1px solid black;
+    }
+
+    nav div
+    {
+        margin-top: 18px;
+    }
+
+    nav strong
+    {
+        color: black;
+        font-weight: normal;
+    }
+
+    nav a:hover
+    {
+        color: black;
+        border-bottom: 2px solid black;
+        border-top: none;
+    }
+
+    /*--Tablette header ligne 2 Titre + form--*/
+
+    header h1
+    {
+        font-size: 18px;
+    }
+
+    header h1, header .ligne3
+    {
+        width: 50%;
+    }
+
+    form
+    {
+        width: 43%;
+        position: absolute;
+        top: 86px;
+        right: 28px;
+    }
+
+    .mapmarker  /*-- ????????  --*/
+    {
+        width: 40px;
+        min-height: 40px;
+    }
+
+    .champville
+    {
+        width: 43%;
+        border: 2px solid #F2F2F2;
+    }
+
+    /*--Tablette header ligne 3 filtres--*/
+
+    .f
+    {
+        margin-right: 40px;
+    }
+
+    /*--Tablette hotels--*/
+
+    #hotels
+    {
+        padding-left: 0px;
+        flex-direction: column-reverse;
+    }
+
+    /*--Tablette populaires--*/
+
+    .sectionB
+    {
+        width: 93%;
+    }
+
+    .trois-photos
+    {
+        margin: 0 -16px;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-top: -40px;
+        padding-bottom: 25px;
+    }
+
+    .trois-photos a
+    {
+        border: 2px blue solid;
+        height: 140px;
+        width: 30%;
+        padding-bottom: 1px;
+    }
+
+    .photo9 img
+    {
+        min-width: 100px;
+    }
+
+    .trois-photos h4
+    {
+        font-size: 14px;
+        padding-left: 13px;
+        margin-bottom: 10px;
+    }
+
+    .trois-photos p
+    {
+        padding-left: 13px;
+    }
+
+    .nuit1, .nuit2, .nuit3
+    {
+        font-size: 14px;
+    }
+    .note
+    {
+        margin-top: 25px;
+    }
+
+    /*--Tablette hebergements--*/
+
+    #sectionA
+    {
+        margin-top: 25px;
+        width: 93%;
+    }
+
+    /*--Tablette avtivites--*/
+
+    #activites
+    {
+        margin: 0px;
+        padding: 0;
+        width: 97%;
+    }
+
+    #photo4-2 img
+    {
+        max-height: 152px;
+    }
+
+    footer
+    {
+        margin-left: 0px;
+        margin-right: 13px;
+        padding-left: 27px;
+        padding-right: 0;
+    }
+
 }
