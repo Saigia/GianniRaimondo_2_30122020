@@ -377,7 +377,7 @@ h2
 
 .photo9 img
 {
-    min-width: 143px;
+    min-width: 40%;
 }
 
 .trois-photos h4
@@ -714,12 +714,7 @@ footer a
         font-size: medium;
         margin-bottom: -7px;
     }
-
-    .photo9 img
-    {
-        min-width: 40%;
-    }
-
+    
     .nuit1, .nuit2, .nuit3
     {
         margin-bottom: 22px;
