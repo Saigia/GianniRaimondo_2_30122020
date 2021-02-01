@@ -3,6 +3,8 @@
 body
 {
     font-family: 'raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1
@@ -375,7 +377,7 @@ h2
     object-fit: cover;
 }
 
-.photo9 img
+.photo9 img, .photo8 img
 {
     min-width: 40%;
 }
@@ -530,7 +532,7 @@ footer a
 
 /*-------------- Style Mobile ---------------*/
 
-@media screen and (min-width: 320px) and (max-width: 767px)
+@media screen and (max-width: 767px)
 {
     body
     {
@@ -560,7 +562,7 @@ footer a
     {
         position: absolute;
         top: 15px;
-        right: 5px;
+        right: 10px;
         height: 20px;
         margin-bottom: -10px;
     }
@@ -572,31 +574,49 @@ footer a
         margin-top: 25px;
     }
 
+    .element1
+    {
+        height: 66%;
+        padding-left: 15px;
+        margin-bottom: 0;
+    }
+
+    .element2
+    {
+        height: 66%;
+        padding-right: 15px;
+        margin-bottom: 0;
+    }
+
     nav .element1
     {
-        margin-right: 25px;
-        padding: 0 5px 10px 5px;
+        width: 50%;
     }
 
     nav .element2
     {
-        margin-left: -5px;
-        padding: 0 5px 10px 5px;
+        width: 50%;
     }
 
     nav a
     {
         padding-left: 0;
         padding-right: 0;
-        padding-bottom: 11px;
-        padding-top: 20px;
+        padding-bottom: 14px;
+        margin-bottom: 0;
     }
 
-    .element1 a:hover, .element2 a:hover
+    nav a:hover
     {
+        border-top: none;
+    }
+
+    .element1:hover, .element2:hover
+    {
+        height: 60%;
         color: #0065FC;
-        border-top: initial;
         border-bottom: 2px solid #0065FC;
+        padding: 0 0 -10px 0;
     }
 
     nav .inscription:hover
