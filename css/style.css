@@ -3,6 +3,7 @@
 body
 {
     font-family: 'raleway', sans-serif;
+    
     margin: 0;
     padding: 0;
 }
@@ -31,6 +32,7 @@ h4
 
 header
 {
+    padding-top: 8px;
     padding-left: 54px;
 }
 
@@ -387,7 +389,7 @@ h2
 {
     margin-top: 13px;
     padding-left: 25px;
-    padding-right: 15px;
+    padding-right: 23px;
 }
 
 .trois-photos p
